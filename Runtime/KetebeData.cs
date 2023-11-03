@@ -13,6 +13,13 @@ namespace Kidstellar.Tools
         {
             SendMessageToKetebe(JsonUtility.ToJson(data));
         }
+
+        public static void SendBackAction()
+        {
+            KetebeData data = new KetebeData();
+            data.actionType = KetebeActionType.Back;
+            SendMessageToKetebe(JsonUtility.ToJson(data));
+        }
     }
 
     public enum KetebeDataType
