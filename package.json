@@ -1,0 +1,13 @@
+{
+    "name": "com.kidstellar.messagetoketebe",
+    "version": "1.0.0",
+    "displayName": "Message To Ketebe",
+    "description": "WebGL projesi üzerinden Ketebe uygulamasına mesaj yollamaya yarar.",
+    "unity": "2021.3",
+  
+    "author": {
+        "name": "kidstellar",
+        "email": "unity@example.com",
+        "url": ""
+    }
+}
