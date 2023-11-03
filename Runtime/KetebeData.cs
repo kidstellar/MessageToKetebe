@@ -7,11 +7,18 @@ namespace Kidstellar.Tools
     public static class MessageToKetebe
     {
         [DllImport("__Internal")]
-        private static extern void _SendMessage(string param);
+        private static extern void SendMessageToKetebe(string param);
 
         public static void SendMessage(KetebeData data)
         {
-            _SendMessage(JsonUtility.ToJson(data));
+            SendMessageToKetebe(JsonUtility.ToJson(data));
+        }
+
+        public static void SendBackAction()
+        {
+            KetebeData data = new KetebeData();
+            data.actionType = KetebeActionType.Back;
+            SendMessageToKetebe(JsonUtility.ToJson(data));
         }
     }
 
